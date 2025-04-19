@@ -4,9 +4,9 @@ from PIL import Image
 qr=qrcode.QRCode(version=1,
                 error_correction=qrcode.constants.ERROR_CORRECT_H,
                 box_size=10, border=4,)
-qr.add_data("https://www.instagram.com/hammadabro_x/")
+qr.add_data("https://www.linkedin.com/in/hammad-mustafa-b0462a338/")
 qr.make(fit=True)
-img=qr.make_image(fill_color="white", back_color="black")
+img=qr.make_image(fill_color="white", back_color="#0A66C2")
 img.save("Qr_code.png")
 
 
